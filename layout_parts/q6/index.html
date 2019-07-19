@@ -32,35 +32,19 @@
                大きく分けて2通りのやり方があるのですが、それが以下の問題の2つです。
                中央寄せするブロックの横幅が可変の場合はtext-alignでの方法が、固定の場合はmarginでの方法が向いています。
           -->
-          <div class="q6 q6--horizontal">
-            <!--
-                 ■この問題で使う大事なプロパティ
-                 ・display
-                 ・text-align
-            -->
-            <!-- Q6-1の回答はここに書いてね -->
-            <!-- 新たにタグは追加しなくてもできます。 -->
-            <div class="q6__box">
-              <div>
-                <p>text-align</p>
+          <div class="q6 q6--content">
+            <div class="q6__box is-textbox">
+              <div class="q6__inbox">
+                  <p class="q6__box__text">text-align</p>
               </div>
             </div>
-            <!-- Q6-1の回答はここに書いてね -->
-
-            <!--
-                 ■この問題で使う大事なプロパティ
-                 ・margin
-            -->
-            <!-- Q6-1の回答はここに書いてね -->
-            <!-- 新たにタグは追加しなくてもできます。 -->
-            <div class="q6__box">
-              <p>margin</p>
+            <div class="q6__box is-margin">
+              <p class="q6__box__text">margin</p>
             </div>
-            <!-- Q6-1の回答はここに書いてね -->
           </div>
         </div>
 
-        <div class="box__inner">
+        <div class="box__inbox">
           <h3 class="box__headline">
             <p class="box__headline__text">ー Q6-2 天地左右中央寄せ ー</p>
           </h3>
@@ -84,9 +68,9 @@
           <!-- Q6-2の回答はここに書いてね -->
           <!-- すでについてるクラスにはstyleを指定しない。styleをつける場合は自分で新たにクラスをつけること -->
           <!-- 新たにタグは追加しなくてもできます。 -->
-          <div class="q6 q6--around">
-            <div>
-              <p>table</p>
+          <div class="q6 q6--2 is-table">
+            <div class="q6__box">
+              <p class="q6__box__text">table</p>
             </div>
           </div>
           <!-- Q6-2の回答はここに書いてね -->
@@ -99,8 +83,8 @@
           <!-- Q6-2の回答はここに書いてね -->
           <!-- すでについてるクラスにはstyleを指定しない。styleをつける場合は自分で新たにクラスをつけること -->
           <!-- 新たにタグは追加しなくてもできます。 -->
-          <div class="q6 q6--around">
-            <p>flex</p>
+          <div class="q6 q6--2 is-flex">
+              <p class="q6__box__text">flex</p>
           </div>
           <!-- Q6-2の回答はここに書いてね -->
           <div class="q6 q6--position">
