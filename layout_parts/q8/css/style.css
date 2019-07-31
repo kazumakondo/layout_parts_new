@@ -261,8 +261,7 @@ li {
   border: 1px solid #ccc;
   content: '';
 }
-.q8__checkbox__btn:checked
-.q8__checkbox__text:after {
+.q8__checkbox__btn:checked+.q8__checkbox__text:after {
   position: absolute;
   top: 50%;
   left: 6px;
