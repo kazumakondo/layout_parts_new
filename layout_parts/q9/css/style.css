@@ -21,6 +21,12 @@
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .8));
   transition: all .5s;
 }
+.q9__main:hover .q9__main__desc{
+  bottom: 0;
+}
+.q9__main:hover .q9__main__thumb{
+  transform: scale(1.5);
+}
 .q9__main__desc__text {
   position: absolute;
   bottom: 0;
@@ -47,12 +53,6 @@
   100%{
       transform: rotate(360deg);
   }
-}
-.q9__main:hover .q9__main__desc{
-  bottom: 0;
-}
-.q9__main:hover .q9__main__thumb{
-  transform: scale(1.5);
 }
 
 /* 回答はここに書いてね */
