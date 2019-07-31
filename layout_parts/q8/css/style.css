@@ -126,6 +126,10 @@ ol, ul {
   line-height: 12px;
   box-sizing: border-box;
 }
+.q8__input--init:focus{
+  box-shadow: 0 1px 6px #00BCD4;
+ }
+
 .clearfix:after {
   display: block;
   content: "";
@@ -153,14 +157,14 @@ li {
   box-sizing: border-box;
   cursor: pointer;
 }
-option {
+.option {
   font-weight: normal;
   display: block;
   white-space: pre;
   min-height: 1.2em;
   padding: 0px 2px 1px;
 }
-select {
+.select {
   text-rendering: auto;
   color: initial;
   letter-spacing: normal;
@@ -187,6 +191,54 @@ select {
 .q8__main__items__title .is-required {
   color: #F00;
 }
+
+.q8__radio {
+  cursor: pointer;
+}
+.q8__radio__btn {
+  display: none;
+}
+.q8__radio__text {
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 20px;
+}
+.q8__radio__text:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  margin-top: -8px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  content: '';
+}
+.q8__radio__btn:checked + .q8__radio__text:after {
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
+  background-color: #00BCD4;
+  border-radius: 50%;
+  content: '';
+}
+
+.q8__main__bottom {
+  text-align: right;
+}
+.q8__main__bottom__btn {
+    padding: 0 10px;
+    border-radius: 5px;
+    background-color: #00BCD4;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 26px;
+}
 .q8__checkbox {
   text-align: right;
 }
@@ -209,17 +261,18 @@ select {
   border: 1px solid #ccc;
   content: '';
 }
-.q8__main__bottom {
-  text-align: right;
-}
-.q8__main__bottom__btn {
-    padding: 0 10px;
-    border-radius: 5px;
-    background-color: #00BCD4;
-    color: #FFF;
-    cursor: pointer;
-    font-size: 16px;
-    line-height: 26px;
+.q8__checkbox__btn:checked
+.q8__checkbox__text:after {
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  margin-top: -14px;
+  width: 8px;
+  height: 16px;
+  border-right: 3px solid #00BCD4;
+  border-bottom: 3px solid #00BCD4;
+  transform: rotate(45deg);
+  content: '';
 }
 .q8__side {
   float: right;
