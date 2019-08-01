@@ -117,17 +117,7 @@ ol, ul {
   -moz-appearance: none;
   appearance: none;
 }
-.q8__input--init2{
-  padding: 0;
-  background: none;
-  border: none;
-  border-radius: 0;
-  font-size: 16px;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
+
 .q8__input {
   width: 100%;
   padding: 5px;
@@ -137,7 +127,7 @@ ol, ul {
   line-height: 12px;
   box-sizing: border-box;
 }
-.q8__input--init:focus{
+.q8__input--focus:focus{
   box-shadow: 0 1px 6px #00BCD4;
  }
 
